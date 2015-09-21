@@ -1,0 +1,28 @@
+{
+  "name": "pluralsight-hapi",
+  "version": "1.0.0",
+  "description": "Hapi.js content for pluralsight",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joseph-norman/pluralsight-hapi.git"
+  },
+  "keywords": [
+    "Hapi",
+    "pluralsight",
+    "Node.js"
+  ],
+  "author": "Joe Norman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joseph-norman/pluralsight-hapi/issues"
+  },
+  "homepage": "https://github.com/joseph-norman/pluralsight-hapi",
+  "dependencies": {
+    "hapi": "^8.6.1",
+    "joi": "^6.4.3"
+  }
+}
