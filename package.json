@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/joseph-norman/pluralsight-hapi",
   "dependencies": {
-    "@gar/hapi-json-api": "^1.0.6",
     "confidence": "^1.4.1",
     "glue": "^2.3.0",
     "hapi": "^10.0.0",

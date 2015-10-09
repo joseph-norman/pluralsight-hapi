@@ -12,7 +12,7 @@ gulp.task('babel', function() {
 gulp.task('default', ['babel'], function() {
   nodemon({
     script: '/build/index.js',
-    ext: 'js json'
-    tasks: ['babel', 'copy']
+    ext: 'js json',
+    tasks: ['babel']
   })
 })

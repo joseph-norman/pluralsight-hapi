@@ -4,15 +4,6 @@ var Hapi = require('hapi');
 var server = new Hapi.Server();
 server.connection({ port: 3000 });
 
-server.register({
-	register: require('@gar/hapi-json-api'),
-	options: {}
-}, function(err) {
-	if (err) {
-		throw err;
-	}
-});
-
 server.route({
     method: 'GET',
     path: '/',
@@ -32,7 +23,7 @@ server.start(function () {
 
 
 // get [/api/users]
-// get [/api/user/{id}]
+// get [/api/users/{id}]
 // post [/api/users]
-// put [/api/users]
-// delete [/api/users]
+// put [/api/users/{id}]
+// delete [/api/users/{id}]
