@@ -1,0 +1,125 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# MakeBelieveIncorporated - API
+
+Here at MBI, we value developers - so we've created this lovely API for you to use and consume! Enjoy.
+
+# Group Users [/users]
+
+## List All users [/api/users]
+
+### Retrieve all users currently registered [GET]
+
++ Request
+
+    + Headers
+    
+            Accept: application/json
+
++ Response 200 (application/json)
+
+            [
+                {
+                    "id": "12456",
+                    "name": "Joe Bloggs",
+                    "username": "loremipsum1"
+                },
+                {
+                    "id": "12347",
+                    "name": "Douglas Crockford",
+                    "username": "kingofjavascript10"
+                },
+                {
+                    "id": "999",
+                    "name": "Bruce Wayne",
+                    "username": "iamnotbatman123"
+                }
+            ]
+
+
+## Get user by id [/api/users/{userId}]
+
+### Get a user by their identifier [GET]
+
++ Request
+
+    + Headers
+    
+            Accept: application/json
+
++ Response 200 (application/json)
+
+            {
+                "id": "12456"
+                "name": "Joe Bloggs",
+                "username": "loremipsum1"
+            }
+
+## Create a new user [/api/users]
+
+### Create a new user [POST]
+
++ Request
+
+    + Headers
+    
+            Accept: application/json
+            Content-Type: application/json
+    
+    + Body
+    
+            {
+                "firstName": "Anew",
+                "lastName": "User",
+                "username": "anewuser100",
+                "emailAddress": "anewuser100@anewuser.com",
+                "dOB": "1990-05-17",
+            }
+            
++ Response 201 (application/json)
+
+            {
+                "id": "123456789",
+                "createdAt": "2015-10-13 00:00:00"
+            }
+            
+            
+
++ Response 200 (application/json)
+
+## Update an existing user [/api/users/{userId}]
+
+### Update an existing user [PUT]
+
++ Request
+
+    + Headers
+    
+            Accept: application/json
+            Content-Type: application/json
+    
+    + Body
+    
+            {
+                "firstName": "Anew",
+                "lastName": "User",
+                "username": "anewuser100",
+                "emailAddress": "anewuser100@anewuser.com",
+                "dOB": "1990-05-17",
+            }
+            
++ Response 200
+
+## Delete an existing user [/api/users/{userId}]
+
+### Delete an existing user [DELETE]
+
++ Request
+
+    + Headers
+    
+            Accept: application/json
+            Content-Type: application/json
+            
++ Response 200
