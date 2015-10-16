@@ -1,23 +1,25 @@
+'use strict';
 
-var Hapi = require('hapi');
+const Hapi = require('hapi');
+const config = require('./config/config');
 
-var server = new Hapi.Server();
+let server = new Hapi.Server();
 server.connection({ port: 3000 });
 
 server.route({
-    method: 'GET',
-    path: '/',
-    handler: function (request, reply) {
-        reply({
-        	data: {
-        		id: 'ok',
-        		type: 'response'
-        	}
-        });
-    }
+  method: 'GET',
+  path: '/',
+  handler: (request, reply) => {
+    reply({
+    	data: {
+    		id: 'ok',
+    		type: 'response'
+    	}
+    });
+  }
 });
 
-server.start(function () {
+server.start(() => {
   console.log('Server running at:', server.info.uri);
 });
 
