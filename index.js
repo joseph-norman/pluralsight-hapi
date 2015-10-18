@@ -1,6 +1,4 @@
-
 'use strict';
-
 /**
  * index.js
  *
@@ -50,7 +48,6 @@ server.route([
     }
   }
 ]);
-
 
 server.start(() => {
   console.log('Server running at:', server.info.uri);

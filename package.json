@@ -23,12 +23,10 @@
   "homepage": "https://github.com/joseph-norman/pluralsight-hapi",
   "dependencies": {
     "confidence": "^1.4.1",
-    "glue": "^2.3.0",
     "hapi": "^10.0.0",
     "joi": "^6.4.3"
   },
   "devDependencies": {
-    "del": "^2.0.2",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
     "gulp-lab": "^1.0.5",
