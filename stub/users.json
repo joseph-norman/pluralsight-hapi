@@ -1,0 +1,17 @@
+[
+  {
+    "id": "12456",
+    "name": "Joe Bloggs",
+    "username": "loremipsum1"
+  },
+  {
+    "id": "12347",
+    "name": "Douglas Crockford",
+    "username": "kingofjavascript10"
+  },
+  {
+    "id": "999",
+    "name": "Bruce Wayne",
+    "username": "iamnotbatman123"
+  }
+]
