@@ -23,6 +23,7 @@
   "homepage": "https://github.com/joseph-norman/pluralsight-hapi",
   "dependencies": {
     "confidence": "^1.4.1",
+    "dogwater": "^1.0.1",
     "hapi": "^10.0.0",
     "joi": "^6.4.3"
   },
