@@ -9,12 +9,12 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
 
 ## List All users [/api/users]
 
-### Retrieve all users currently registered [GET]
+### Retrieve all users currently registered on the MBI platform [GET]
 
 + Request
 
     + Headers
-    
+
             Accept: application/json
 
 + Response 200 (application/json)
@@ -38,9 +38,9 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
             ]
 
 
-## Get user by id [/api/users/{userId}]
+## Get user by id [/api/users/{id}]
 
-### Get a user by their identifier [GET]
+### Get a specific user by their MBI identifier [GET]
 
 + Request
 
@@ -88,7 +88,7 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
 
 + Response 200 (application/json)
 
-## Update an existing user [/api/users/{userId}]
+## Update an existing user [/api/users/{id}]
 
 ### Update an existing user [PUT]
 
@@ -109,9 +109,9 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
                 "dOB": "1990-05-17",
             }
             
-+ Response 200
++ Response 204
 
-## Delete an existing user [/api/users/{userId}]
+## Delete an existing user [/api/users/{id}]
 
 ### Delete an existing user [DELETE]
 
@@ -120,6 +120,5 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
     + Headers
     
             Accept: application/json
-            Content-Type: application/json
             
-+ Response 200
++ Response 204
