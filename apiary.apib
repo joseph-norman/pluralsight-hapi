@@ -9,6 +9,8 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
 
 ## List All users [/api/users]
 
+This endpoint allows the consumer to retrieve a list of registered users, in an array format.
+
 ### Retrieve all users currently registered on the MBI platform [GET]
 
 + Request
@@ -40,6 +42,8 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
 
 ## Get user by id [/api/users/{id}]
 
+This endpoint allows the consumer to retrieve a single user, based on their registered identifier.
+
 ### Get a specific user by their MBI identifier [GET]
 
 + Request
@@ -57,6 +61,8 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
             }
 
 ## Create a new user [/api/users]
+
+This endpoint allows the consumer to create a new user. A unique identifier will be created via this endpoint that is registered internally.
 
 ### Create a new user [POST]
 
@@ -88,7 +94,10 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
 
 + Response 200 (application/json)
 
+
 ## Update an existing user [/api/users/{id}]
+
+This endpoint allows the consumer to update an existing user, based on their registered identifier.
 
 ### Update an existing user [PUT]
 
@@ -112,6 +121,8 @@ Here at MBI, we value developers - so we've created this lovely API for you to u
 + Response 204
 
 ## Delete an existing user [/api/users/{id}]
+
+This endpoint allows the consumer to delete an existing user, based on their registered identifier.
 
 ### Delete an existing user [DELETE]
 
